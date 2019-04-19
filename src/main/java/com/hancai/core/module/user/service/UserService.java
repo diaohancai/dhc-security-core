@@ -18,8 +18,8 @@ public class UserService {
 
     public UserService() {
         // 初始化内存表
-        users.add(new User("1", "刁汉财", "$2a$10$hlmqsb1OCKT1I0osevlw9ui9c1KbT5wMdhH8EcY8o4hcPD1ZwQKKe", "admin", new Date())); // 222
-        users.add(new User("2", "张桥", "$2a$10$DiqaHBJG4eAlZGmmxUmuH.KwCBQcrw139b60JupSeksqxu7IYhZeO", "admin", new Date())); // 222
+        users.add(new User("1", "diaohancai", "$2a$10$hlmqsb1OCKT1I0osevlw9ui9c1KbT5wMdhH8EcY8o4hcPD1ZwQKKe", "admin", new Date())); // 222
+        users.add(new User("2", "zhagnqiao", "$2a$10$DiqaHBJG4eAlZGmmxUmuH.KwCBQcrw139b60JupSeksqxu7IYhZeO", "admin", new Date())); // 222
     }
 
     public List<User> getUsersAll() {
