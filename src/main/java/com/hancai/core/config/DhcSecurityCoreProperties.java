@@ -25,7 +25,9 @@ public class DhcSecurityCoreProperties {
 
         private String loginProcessUrl = "/api/login";
 
-        private String logoutProcessUrl;
+        private String logoutPage = "/module/login/default-login.html";
+
+        private String logoutProcessUrl = "/api/logout";
     }
 
     @Data
@@ -33,6 +35,8 @@ public class DhcSecurityCoreProperties {
         private String loginPage;
 
         private String loginProcessUrl;
+
+        private String logoutPage;
 
         private String logoutProcessUrl;
     }

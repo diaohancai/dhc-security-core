@@ -3,6 +3,7 @@ package com.hancai.core.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
@@ -28,4 +29,11 @@ public class DhcWebMvcConfigurer extends WebMvcConfigurerAdapter {
 
         super.addViewControllers(registry);
     }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        super.addResourceHandlers(registry);
+    }
+
 }
